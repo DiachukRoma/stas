@@ -6,10 +6,8 @@ html, body{
 	display: flex;
 	height: 250px;
 }*/
-.block{
-	width: 200px;
-	height: 80px;
-	background-color: #fa0000;
-	margin: 20px;
-	padding: 20px;
+.owl-carousel .item {
+    height: 10rem;
+    background: #4DC7A0;
+    padding: 1rem;
 }
