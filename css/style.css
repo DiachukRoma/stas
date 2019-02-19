@@ -1,11 +1,16 @@
 html, body{
 	margin: 0;
 }
-/*section{
-	overflow: auto;
+.preloader{
+	position: absolute;
 	display: flex;
-	height: 250px;
-}*/
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+}
+
+
 .owl-carousel .item {
     height: 10rem;
     background: #4DC7A0;

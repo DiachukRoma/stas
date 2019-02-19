@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+	/*-----------------------------------
+				Carousel
+	------------------------------------*/
 	var owl = $('.owl-carousel');
 	owl.owlCarousel({
 	    loop:true,
@@ -27,4 +31,13 @@ $(document).ready(function(){
 	    }
 	    e.preventDefault();
 	});
+
+	/*-----------------------------------
+				Preloader
+	------------------------------------*/
+	var itemPreload = ['HEllO', 'My name is Stas', 'I am web designer'];
+
+	console.log(itemPreload);
+
+
 })
