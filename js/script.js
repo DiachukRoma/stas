@@ -37,7 +37,18 @@ $(document).ready(function(){
 	------------------------------------*/
 	var itemPreload = ['HEllO', 'My name is Stas', 'I am web designer'];
 
-	console.log(itemPreload);
-
+	function preloadFunc(item){
+		for (var i = 0; i < item.length; i++) {
+		    (function(i) {
+		        setTimeout(function() { 
+		        	$('.preloader').html(item[i]);
+		        }, i * 1200);
+		    })(i);
+		}
+		setTimeout(function(){
+			$('.preloader').fadeOut();
+		}, 3600);
+	}
+	preloadFunc(itemPreload);
 
 })
