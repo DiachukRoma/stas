@@ -1,0 +1,15 @@
+html, body{
+	margin: 0;
+}
+/*section{
+	overflow: auto;
+	display: flex;
+	height: 250px;
+}*/
+.block{
+	width: 200px;
+	height: 80px;
+	background-color: #fa0000;
+	margin: 20px;
+	padding: 20px;
+}
