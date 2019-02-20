@@ -41,7 +41,8 @@ $(document).ready(function(){
 		for (var i = 0; i < item.length; i++) {
 		    (function(i) {
 		        setTimeout(function() { 
-		        	$('.preloader').html(item[i]);
+		        	$('.preloader .text').css('display', 'none');
+		        	$('.preloader .text').html(item[i]).fadeIn(600);
 		        }, i * 1200);
 		    })(i);
 		}

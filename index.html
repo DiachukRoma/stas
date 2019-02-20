@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Web portfolio</title>
 	<link rel="icon" type="image/png" href="img/logoMain.png" />
 
@@ -10,10 +11,33 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 </head>
 <body>
+	<div class="preloader">
+		<div class="text"></div>
+	</div>
 
-	<div class="preloader"></div>
+	<header>
+		<div class="logo">
+			<a href="#"><img src="img/logoMain.svg" alt=""></a>
+		</div>
+		<div class="social">
+			<div class="sSoc"><a href="#"><img src="img/behance-logo.svg" alt=""></a></div>
+			<div class="sSoc"><a href="#"><img src="img/insta-logo.svg" alt=""></a></div>
+			<div class="sSoc"><a href="#"><img src="img/facebook-logo.svg" alt=""></a></div>
+			<div class="sSoc"><a href="#"><img src="img/telegram-logo.svg" alt=""></a></div>
+		</div>
+	</header>
+	<nav class="nav">
+		<ul>
+			<li data-item="work">Work</li>
+			<li data-item="about">About</li>
+			<li data-item="contact">Contact</li>
+		</ul>
+	</nav>
+
+	<section class="temp">I am web designer</section>
+
 	
-	<div class="owl-carousel">
+	<div class="owl-carousel d-none">
 		<div class="item">ITEM - 1</div>
 		<div class="item">ITEM - 2</div>
 		<div class="item">ITEM - 3</div>
