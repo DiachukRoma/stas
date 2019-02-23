@@ -34,6 +34,7 @@ $(document).ready(function(){
 		    })(i);
 		}
 		setTimeout(function(){
+			$('.work').removeClass('visiVis');
 			$('.preloader').fadeOut();
 		}, 3600);
 	}
@@ -42,6 +43,17 @@ $(document).ready(function(){
 	/*-----------------------------------
 					Menu
 	------------------------------------*/
-	
+	$('.nav li').click(function() {
+		
+		var classItem = $(this).data('item');
+
+		if(!($(this).hasClass('active'))){
+			$('.nav li').removeClass('active');
+			$(this).addClass('active');
+
+			$('.sectionBlock').removeClass('active');
+			$('.'+ classItem).addClass('active');					
+		}
+	});
 
 })

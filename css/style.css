@@ -76,6 +76,7 @@ header{
 }
 .nav li.active{
 	color: #1E1E1E;
+    text-decoration: underline;	
 }
 .temp{
 	position: absolute;
@@ -104,7 +105,9 @@ header{
 .about p{
 	padding-left: 10px;
 }
-
+.aboutImg{
+	animation: reveal 2s forwards; 
+}
 .work .owl-carousel{
 	position: absolute;
 	left: 56px;
@@ -147,4 +150,13 @@ header{
 }
 .d-none{
 	display: none !important;
+}
+.sectionBlock{
+	display: none;
+}
+.sectionBlock.active{
+	display: block;
+}
+.visiVis{
+	display: block !important;
 }
