@@ -6,22 +6,10 @@ $(document).ready(function(){
 	var owl = $('.owl-carousel');
 	owl.owlCarousel({
 	    loop:true,
-	    nav:true,
-	    margin:10,
-	    responsive:{
-	        0:{
-	            items:1
-	        },
-	        600:{
-	            items:3
-	        },            
-	        960:{
-	            items:4
-	        },
-	        1200:{
-	            items:4
-	        }
-	    }
+	    margin:35,
+	    center:true,
+	    stagePadding:1,
+	    autoWidth:true,
 	});
 	owl.on('mousewheel', '.owl-stage', function (e) {
 	    if (e.deltaY>0) {
@@ -36,7 +24,6 @@ $(document).ready(function(){
 				Preloader
 	------------------------------------*/
 	var itemPreload = ['HEllO', 'My name is Stas', 'I am web designer'];
-
 	function preloadFunc(item){
 		for (var i = 0; i < item.length; i++) {
 		    (function(i) {
@@ -51,5 +38,10 @@ $(document).ready(function(){
 		}, 3600);
 	}
 	preloadFunc(itemPreload);
+
+	/*-----------------------------------
+					Menu
+	------------------------------------*/
+	
 
 })

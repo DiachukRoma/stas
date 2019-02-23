@@ -79,7 +79,7 @@ header{
 }
 .temp{
 	position: absolute;
-	left: 40px;
+	left: 56px;
     bottom: 16%;
 	font-weight: 600;
 	font-size: 72px;
@@ -87,7 +87,6 @@ header{
   	animation: reveal 2s forwards;
   	animation-delay: 3.7s;
 }
-
 @keyframes reveal {
   from {
     clip-path: inset(0 100% 0 0);
@@ -96,13 +95,56 @@ header{
     clip-path: inset(0 0 0 0);
   }
 }
-
-.owl-carousel .item {
-    height: 10rem;
-    background: #4DC7A0;
-    padding: 1rem;
+.about{
+    position: absolute;
+    bottom: 56px;
+    left: 56px;
+    max-width: 440px;
+}
+.about p{
+	padding-left: 10px;
 }
 
+.work .owl-carousel{
+	position: absolute;
+	left: 56px;
+    bottom: 24%;  
+    width: calc(100% - 56px); 
+}
+.blockTitle{
+	position: absolute;
+    bottom: 16%;
+    left: 56px;
+	font-weight: 600;
+	font-size: 72px;
+	color: #1E1E1E;
+  	animation: reveal 2s forwards; 
+}
+.owl-stage{
+	padding-bottom: 35px;
+}
+.owl-stage-outer{
+	padding: 0 24px;
+}
+.owl-carousel .item{
+    height: 300px;
+    border-radius: 10px;
+	transition: all 0.4s;
+}
+.owl-carousel .item:hover{
+	box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.15);
+	transition: all 0.4s;
+}
+.blockContact{
+    position: absolute;
+    bottom: 40%;
+    left: 58px;
+    font-size: 24px;
+}
+.blockContact a{
+	color: #000;
+	text-decoration: none;
+}
 .d-none{
 	display: none !important;
 }
