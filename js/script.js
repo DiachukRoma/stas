@@ -10,6 +10,8 @@ $(document).ready(function(){
 	    center:true,
 	    stagePadding:1,
 	    autoWidth:true,
+	    dots:false,
+	    autoplay:true,
 	});
 	owl.on('mousewheel', '.owl-stage', function (e) {
 	    if (e.deltaY>0) {
@@ -44,9 +46,7 @@ $(document).ready(function(){
 					Menu
 	------------------------------------*/
 	$('.nav li').click(function() {
-		
 		var classItem = $(this).data('item');
-
 		if(!($(this).hasClass('active'))){
 			$('.nav li').removeClass('active');
 			$(this).addClass('active');
@@ -55,5 +55,13 @@ $(document).ready(function(){
 			$('.'+ classItem).addClass('active');					
 		}
 	});
+
+	$('.logo img').click(function(){
+		if(!($('.temp').hasClass('active'))){
+			$('.sectionBlock').removeClass('active');
+			$('.temp').css('animation-delay', '0s').addClass('active');
+			$('.nav li').removeClass('active');
+		}
+	});	
 
 })

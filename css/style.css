@@ -142,7 +142,10 @@ header{
     position: absolute;
     bottom: 40%;
     left: 58px;
-    font-size: 24px;
+    font-size: 14px;
+}
+.singleContact{
+	margin-bottom: 12px;
 }
 .blockContact a{
 	color: #000;
@@ -159,4 +162,66 @@ header{
 }
 .visiVis{
 	display: block !important;
+}
+.logo{
+	cursor: pointer;
+}
+@media screen and (max-width: 1100px){
+	.social{
+	    flex-direction: column;
+	    margin-top: 140px;
+	    margin-right: 4px;
+	}
+	.social .sSoc {
+	    margin: 12px 18px;
+	}
+	.blockTitle, .aboutImg{
+		display: none;
+	}
+	.temp{
+		font-weight: 600;
+		line-height: normal;
+		font-size: 36px;
+		color: #1E1E1E;
+		bottom: 34%;
+    	left: 20px;
+	}
+	.logo {
+	    margin-left: 16px;
+	    margin-top: 10px;
+	}
+	.preloader .text{
+	    font-size: 30px;
+	    color: #c1c1c1;
+	}
+	.work .owl-carousel {
+	    left: 0;
+	    bottom: 28%;
+	    width: 100%;
+	}
+	.no-js .owl-carousel, .owl-carousel.owl-loaded {
+	    height: 300px;
+	}
+	.about {
+	    bottom: 30%;
+	    left: 16px;
+	    width: calc(100% - 32px);
+	}
+	.blockContact {
+	    bottom: 38%;
+	    left: 22px;
+	}
+	.owl-stage{
+		padding: 0;
+	}
+}
+@media screen and (max-width: 375px){
+	.nav {
+	    position: absolute;
+	    right: 0;
+	    bottom: 10%;
+	}
+	.work .owl-carousel {
+	    bottom: 20%;
+	}
 }
