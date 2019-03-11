@@ -7,11 +7,9 @@ $(document).ready(function(){
 	owl.owlCarousel({
 	    loop:true,
 	    margin:35,
-	    center:true,
 	    stagePadding:1,
-	    autoWidth:true,
-	    dots:false,
-	    autoplay:true,
+	    dots:true,
+		items: 1,
 	});
 	owl.on('mousewheel', '.owl-stage', function (e) {
 	    if (e.deltaY>0) {

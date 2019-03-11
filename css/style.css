@@ -18,6 +18,7 @@
 html, body{
 	font-family: 'Open Sans' !important;
 	margin: 0;
+	overflow: hidden;
 }
 header{
 	position: absolute;
@@ -58,7 +59,7 @@ header{
 .nav{
 	position: absolute;
 	right: 40px;
-    bottom: 16%;
+    bottom: 28px;
 }
 .nav ul{
 	display: flex;
@@ -78,15 +79,26 @@ header{
 	color: #1E1E1E;
     text-decoration: underline;	
 }
-.temp{
-	position: absolute;
-	left: 56px;
-    bottom: 16%;
+.aboutTitle{
 	font-weight: 600;
 	font-size: 72px;
+	line-height: 69px;
 	color: #1E1E1E;
-  	animation: reveal 2s forwards;
-  	animation-delay: 3.7s;
+  	animation: reveal 2s forwards; 
+}
+.aboutTitle:after{
+	content: '';
+	position: absolute;
+	border: 2px solid #C4C4C4;
+	width: 215px;
+	bottom: 6px;
+    margin-left: 30px;
+}
+.abouText{
+	margin-top: 55px;
+}
+.abouText p{
+    width: 380px;
 }
 @keyframes reveal {
   from {
@@ -96,60 +108,16 @@ header{
     clip-path: inset(0 0 0 0);
   }
 }
-.about{
-    position: absolute;
-    bottom: 56px;
-    left: 56px;
-    max-width: 440px;
+.abouText a{
+	font-size: 18px;
+	color: #1A1A1A;
+	text-decoration: none;
 }
-.about p{
-	padding-left: 10px;
-}
-.aboutImg{
-	animation: reveal 2s forwards; 
-}
-.work .owl-carousel{
-	position: absolute;
-	left: 56px;
-    bottom: 24%;  
-    width: calc(100% - 56px); 
-}
-.blockTitle{
-	position: absolute;
-    bottom: 16%;
-    left: 56px;
-	font-weight: 600;
-	font-size: 72px;
-	color: #1E1E1E;
-  	animation: reveal 2s forwards; 
-}
-.owl-stage{
-	padding-bottom: 35px;
-}
-.owl-stage-outer{
-	padding: 0 24px;
-}
-.owl-carousel .item{
-    height: 300px;
-    border-radius: 10px;
-	transition: all 0.4s;
-}
-.owl-carousel .item:hover{
-	box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.15);
-	transition: all 0.4s;
-}
-.blockContact{
-    position: absolute;
-    bottom: 40%;
-    left: 58px;
-    font-size: 14px;
+.abouText a:hover{
+	color: #525252;
 }
 .singleContact{
-	margin-bottom: 12px;
-}
-.blockContact a{
-	color: #000;
-	text-decoration: none;
+	margin-bottom: 6px;
 }
 .d-none{
 	display: none !important;
@@ -158,7 +126,9 @@ header{
 	display: none;
 }
 .sectionBlock.active{
-	display: block;
+	display: flex;
+    height: 100vh;
+    align-items: center;
 }
 .visiVis{
 	display: block !important;
@@ -166,6 +136,51 @@ header{
 .logo{
 	cursor: pointer;
 }
+
+.owl-carousel{
+    transform: rotate(-90deg);
+}
+.owl-carousel .group{
+    transform: rotate(90deg);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.owl-carousel .title{
+	font-weight: 600;
+	line-height: normal;
+	font-size: 72px;
+	color: #1E1E1E;
+    padding-left: 30px;
+}
+.owl-carousel .title span{
+	font-weight: 300;
+}
+.owl-carousel .description{
+	margin-top: 30px;
+    width: 500px;
+    line-height: normal;
+    font-size: 18px;
+    color: #1A1A1A;
+}
+.owl-dots{
+    position: absolute;
+    top: 0%;
+	left: 15%;
+    transform: rotate(180deg);
+}
+.owl-dot{
+	width: 10px;
+    height: 10px;
+    background-color: #000;
+    margin-right: 30px;
+}
+.arrowRight{
+	position: absolute;
+}
+
 @media screen and (max-width: 1100px){
 	.social{
 	    flex-direction: column;
@@ -178,14 +193,6 @@ header{
 	.blockTitle, .aboutImg{
 		display: none;
 	}
-	.temp{
-		font-weight: 600;
-		line-height: normal;
-		font-size: 36px;
-		color: #1E1E1E;
-		bottom: 34%;
-    	left: 20px;
-	}
 	.logo {
 	    margin-left: 16px;
 	    margin-top: 10px;
@@ -194,34 +201,5 @@ header{
 	    font-size: 30px;
 	    color: #c1c1c1;
 	}
-	.work .owl-carousel {
-	    left: 0;
-	    bottom: 28%;
-	    width: 100%;
-	}
-	.no-js .owl-carousel, .owl-carousel.owl-loaded {
-	    height: 300px;
-	}
-	.about {
-	    bottom: 30%;
-	    left: 16px;
-	    width: calc(100% - 32px);
-	}
-	.blockContact {
-	    bottom: 38%;
-	    left: 22px;
-	}
-	.owl-stage{
-		padding: 0;
-	}
-}
-@media screen and (max-width: 375px){
-	.nav {
-	    position: absolute;
-	    right: 0;
-	    bottom: 10%;
-	}
-	.work .owl-carousel {
-	    bottom: 20%;
-	}
+
 }
