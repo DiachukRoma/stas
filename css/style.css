@@ -167,7 +167,7 @@ header{
 }
 .owl-dots{
     position: absolute;
-    bottom: 0;
+    bottom: -80px;
     left: 35%;
 }
 .owl-dot{
