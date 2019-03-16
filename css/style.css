@@ -138,10 +138,10 @@ header{
 }
 
 .owl-carousel{
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 }
 .owl-carousel .group{
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     height: 80vh;
     display: flex;
     align-items: center;
@@ -167,19 +167,53 @@ header{
 }
 .owl-dots{
     position: absolute;
-    top: 0%;
-	left: 15%;
-    transform: rotate(180deg);
+    bottom: 0;
+    left: 35%;
 }
 .owl-dot{
-	width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 18px;
     background-color: #000;
     margin-right: 30px;
+
+}
+.owl-dot:nth-child(1):after{
+	content: 'T';
+}
+.owl-dot:nth-child(2):after{
+	content: 'A';
+}
+.owl-dot:nth-child(3):after{
+	content: 'S';
+}
+.owl-dot.active:nth-child(3):after{
+	left: 60px !important;
+}
+.owl-dot:after{
+	position: absolute;
+	top: -2px;
+    margin-left: -7px;
+    width: 14px;
+    height: 22px;
+	transform: rotate(-90deg);
+    transition: 0.4s;
+    font-size: 18px;
+    color: #1E1E1E;
+}
+.owl-dot.active{
+    width: 260px;
+}
+.owl-dot.active:after{
+    font-size: 250px;
+    width: 230px;
+    height: 300px;
+    left: 30px;
+    top: -142px;
 }
 .arrowRight{
 	position: absolute;
 }
+
 
 @media screen and (max-width: 1100px){
 	.social{
